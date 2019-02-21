@@ -7,21 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63373E61221E48AD00B9981B /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E60221E48AD00B9981B /* UserProfileViewController.swift */; };
+		63373E64221E495F00B9981B /* SinginViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E63221E495F00B9981B /* SinginViewControllerDelegate.swift */; };
+		63373E66221E4E4A00B9981B /* SignoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E65221E4E4A00B9981B /* SignoutDelegate.swift */; };
+		63373E68221E50E100B9981B /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E67221E50E100B9981B /* SideMenu.swift */; };
+		63373E6A221E510E00B9981B /* SideMenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E69221E510E00B9981B /* SideMenuTableView.swift */; };
+		63373E6F221E514100B9981B /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E6E221E514100B9981B /* MenuItem.swift */; };
+		63373E71221E515D00B9981B /* SideMenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E70221E515D00B9981B /* SideMenuItemCell.swift */; };
+		63373E73221E56F300B9981B /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E72221E56F300B9981B /* constants.swift */; };
+		63373E76221E5C3000B9981B /* HomeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E75221E5C3000B9981B /* HomeNode.swift */; };
+		63373E78221E5C3F00B9981B /* CPMTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E77221E5C3F00B9981B /* CPMTextNode.swift */; };
+		63373E7A221E5C7A00B9981B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E79221E5C7A00B9981B /* String.swift */; };
+		63373E7C221E604400B9981B /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E7B221E604400B9981B /* ScheduleViewController.swift */; };
+		63373E80221E606A00B9981B /* 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 63373E7E221E606A00B9981B /* 2.pdf */; };
+		63373E81221E606A00B9981B /* 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 63373E7F221E606A00B9981B /* 1.pdf */; };
+		63373E83221E607300B9981B /* montaje.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 63373E82221E607300B9981B /* montaje.pdf */; };
+		63373E86221E60BB00B9981B /* hoteles.json in Resources */ = {isa = PBXBuildFile; fileRef = 63373E85221E60BB00B9981B /* hoteles.json */; };
+		63373E88221E619100B9981B /* HotelsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E87221E619100B9981B /* HotelsListViewController.swift */; };
+		63373E8A221E61B700B9981B /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E89221E61B700B9981B /* Hotel.swift */; };
+		63373E8C221E61D800B9981B /* EventPlaneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E8B221E61D800B9981B /* EventPlaneViewController.swift */; };
+		63373E8E221E621000B9981B /* EventLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E8D221E621000B9981B /* EventLocationViewController.swift */; };
+		63373E90221E623100B9981B /* ExpositorsManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E8F221E623100B9981B /* ExpositorsManualViewController.swift */; };
+		63373E92221E62BA00B9981B /* EventDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E91221E62BA00B9981B /* EventDateViewController.swift */; };
+		63373E94221E633300B9981B /* MontajeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E93221E633300B9981B /* MontajeViewController.swift */; };
+		63373E96221E65C900B9981B /* ExpositorSigninResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E95221E65C900B9981B /* ExpositorSigninResponse.swift */; };
 		63CD3BED221DE9EB008654DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3BEC221DE9EB008654DE /* AppDelegate.swift */; };
-		63CD3BEF221DE9EB008654DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3BEE221DE9EB008654DE /* ViewController.swift */; };
-		63CD3BF2221DE9EB008654DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CD3BF0221DE9EB008654DE /* Main.storyboard */; };
 		63CD3BF4221DE9EC008654DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63CD3BF3221DE9EC008654DE /* Assets.xcassets */; };
 		63CD3BF7221DE9EC008654DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CD3BF5221DE9EC008654DE /* LaunchScreen.storyboard */; };
+		63CD3BFF221DEB64008654DE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3BFE221DEB64008654DE /* MasterViewController.swift */; };
+		63CD3C01221DEB79008654DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3C00221DEB79008654DE /* HomeViewController.swift */; };
+		63CD3C04221DF20B008654DE /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3C03221DF20B008654DE /* SigninViewController.swift */; };
+		63CD3C07221DF242008654DE /* CPMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3C06221DF242008654DE /* CPMTextField.swift */; };
+		63CD3C0A221DF27B008654DE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3C09221DF27B008654DE /* UIColor.swift */; };
+		63CD3C0C221DF3FF008654DE /* CPMNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3C0B221DF3FF008654DE /* CPMNetworkLayer.swift */; };
+		63CD3C0F221DF48D008654DE /* FastSigninRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3C0E221DF48D008654DE /* FastSigninRequestParameters.swift */; };
+		63CD3C11221DF4A0008654DE /* FastSigninResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3C10221DF4A0008654DE /* FastSigninResponse.swift */; };
+		63CD3C13221DF4AE008654DE /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3C12221DF4AE008654DE /* Assistant.swift */; };
+		63CD3C15221DFA6C008654DE /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3C14221DFA6C008654DE /* Credentials.swift */; };
+		E071A4E1C0998110DC600554 /* Pods_Conapeme_2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82BDBD73663664E46F21D96 /* Pods_Conapeme_2019.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		068EEE8CDF5E915428F87070 /* Pods-Conapeme 2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conapeme 2019.release.xcconfig"; path = "Target Support Files/Pods-Conapeme 2019/Pods-Conapeme 2019.release.xcconfig"; sourceTree = "<group>"; };
+		63373E60221E48AD00B9981B /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		63373E63221E495F00B9981B /* SinginViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinginViewControllerDelegate.swift; sourceTree = "<group>"; };
+		63373E65221E4E4A00B9981B /* SignoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignoutDelegate.swift; sourceTree = "<group>"; };
+		63373E67221E50E100B9981B /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		63373E69221E510E00B9981B /* SideMenuTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableView.swift; sourceTree = "<group>"; };
+		63373E6E221E514100B9981B /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		63373E70221E515D00B9981B /* SideMenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuItemCell.swift; sourceTree = "<group>"; };
+		63373E72221E56F300B9981B /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		63373E75221E5C3000B9981B /* HomeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNode.swift; sourceTree = "<group>"; };
+		63373E77221E5C3F00B9981B /* CPMTextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMTextNode.swift; sourceTree = "<group>"; };
+		63373E79221E5C7A00B9981B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		63373E7B221E604400B9981B /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		63373E7E221E606A00B9981B /* 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.pdf; sourceTree = "<group>"; };
+		63373E7F221E606A00B9981B /* 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1.pdf; sourceTree = "<group>"; };
+		63373E82221E607300B9981B /* montaje.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = montaje.pdf; sourceTree = "<group>"; };
+		63373E85221E60BB00B9981B /* hoteles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hoteles.json; sourceTree = "<group>"; };
+		63373E87221E619100B9981B /* HotelsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsListViewController.swift; sourceTree = "<group>"; };
+		63373E89221E61B700B9981B /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		63373E8B221E61D800B9981B /* EventPlaneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlaneViewController.swift; sourceTree = "<group>"; };
+		63373E8D221E621000B9981B /* EventLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLocationViewController.swift; sourceTree = "<group>"; };
+		63373E8F221E623100B9981B /* ExpositorsManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositorsManualViewController.swift; sourceTree = "<group>"; };
+		63373E91221E62BA00B9981B /* EventDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateViewController.swift; sourceTree = "<group>"; };
+		63373E93221E633300B9981B /* MontajeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontajeViewController.swift; sourceTree = "<group>"; };
+		63373E95221E65C900B9981B /* ExpositorSigninResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositorSigninResponse.swift; sourceTree = "<group>"; };
 		63CD3BE9221DE9EB008654DE /* Conapeme 2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conapeme 2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CD3BEC221DE9EB008654DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63CD3BEE221DE9EB008654DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63CD3BF1221DE9EB008654DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63CD3BF3221DE9EC008654DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63CD3BF6221DE9EC008654DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63CD3BF8221DE9EC008654DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63CD3BFE221DEB64008654DE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		63CD3C00221DEB79008654DE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		63CD3C03221DF20B008654DE /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		63CD3C06221DF242008654DE /* CPMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMTextField.swift; sourceTree = "<group>"; };
+		63CD3C09221DF27B008654DE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		63CD3C0B221DF3FF008654DE /* CPMNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMNetworkLayer.swift; sourceTree = "<group>"; };
+		63CD3C0E221DF48D008654DE /* FastSigninRequestParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastSigninRequestParameters.swift; sourceTree = "<group>"; };
+		63CD3C10221DF4A0008654DE /* FastSigninResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastSigninResponse.swift; sourceTree = "<group>"; };
+		63CD3C12221DF4AE008654DE /* Assistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
+		63CD3C14221DFA6C008654DE /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		E82BDBD73663664E46F21D96 /* Pods_Conapeme_2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conapeme_2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E94126D702C0FBB8B117D97D /* Pods-Conapeme 2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conapeme 2019.debug.xcconfig"; path = "Target Support Files/Pods-Conapeme 2019/Pods-Conapeme 2019.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +97,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E071A4E1C0998110DC600554 /* Pods_Conapeme_2019.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63373E62221E494E00B9981B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				63373E63221E495F00B9981B /* SinginViewControllerDelegate.swift */,
+				63373E65221E4E4A00B9981B /* SignoutDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		63373E6D221E513500B9981B /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				63373E6E221E514100B9981B /* MenuItem.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		63373E74221E5C1700B9981B /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				63373E75221E5C3000B9981B /* HomeNode.swift */,
+				63373E77221E5C3F00B9981B /* CPMTextNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		63373E7D221E604D00B9981B /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				63373E82221E607300B9981B /* montaje.pdf */,
+				63373E7F221E606A00B9981B /* 1.pdf */,
+				63373E7E221E606A00B9981B /* 2.pdf */,
+			);
+			path = PDF;
+			sourceTree = "<group>";
+		};
+		63373E84221E608B00B9981B /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				63373E85221E60BB00B9981B /* hoteles.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		63CD3BE0221DE9EB008654DE = {
 			isa = PBXGroup;
 			children = (
 				63CD3BEB221DE9EB008654DE /* Conapeme 2019 */,
 				63CD3BEA221DE9EB008654DE /* Products */,
+				EC7157FFC7D672A2206B2B6A /* Pods */,
+				EDD274B348B1D07C157404ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +169,91 @@
 		63CD3BEB221DE9EB008654DE /* Conapeme 2019 */ = {
 			isa = PBXGroup;
 			children = (
+				63373E84221E608B00B9981B /* JSON */,
+				63373E7D221E604D00B9981B /* PDF */,
+				63373E74221E5C1700B9981B /* Nodes */,
+				63373E6D221E513500B9981B /* Enums */,
+				63373E62221E494E00B9981B /* Protocols */,
+				63CD3C0D221DF423008654DE /* Models */,
+				63CD3C08221DF26D008654DE /* Extensions */,
+				63CD3C05221DF221008654DE /* Views */,
+				63CD3C02221DEB7C008654DE /* ViewControllers */,
 				63CD3BEC221DE9EB008654DE /* AppDelegate.swift */,
-				63CD3BEE221DE9EB008654DE /* ViewController.swift */,
-				63CD3BF0221DE9EB008654DE /* Main.storyboard */,
 				63CD3BF3221DE9EC008654DE /* Assets.xcassets */,
 				63CD3BF5221DE9EC008654DE /* LaunchScreen.storyboard */,
 				63CD3BF8221DE9EC008654DE /* Info.plist */,
+				63CD3C0B221DF3FF008654DE /* CPMNetworkLayer.swift */,
+				63373E72221E56F300B9981B /* constants.swift */,
 			);
 			path = "Conapeme 2019";
+			sourceTree = "<group>";
+		};
+		63CD3C02221DEB7C008654DE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				63CD3BFE221DEB64008654DE /* MasterViewController.swift */,
+				63CD3C00221DEB79008654DE /* HomeViewController.swift */,
+				63CD3C03221DF20B008654DE /* SigninViewController.swift */,
+				63373E60221E48AD00B9981B /* UserProfileViewController.swift */,
+				63373E7B221E604400B9981B /* ScheduleViewController.swift */,
+				63373E87221E619100B9981B /* HotelsListViewController.swift */,
+				63373E8B221E61D800B9981B /* EventPlaneViewController.swift */,
+				63373E8D221E621000B9981B /* EventLocationViewController.swift */,
+				63373E8F221E623100B9981B /* ExpositorsManualViewController.swift */,
+				63373E91221E62BA00B9981B /* EventDateViewController.swift */,
+				63373E93221E633300B9981B /* MontajeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63CD3C05221DF221008654DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63CD3C06221DF242008654DE /* CPMTextField.swift */,
+				63373E67221E50E100B9981B /* SideMenu.swift */,
+				63373E69221E510E00B9981B /* SideMenuTableView.swift */,
+				63373E70221E515D00B9981B /* SideMenuItemCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63CD3C08221DF26D008654DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				63CD3C09221DF27B008654DE /* UIColor.swift */,
+				63373E79221E5C7A00B9981B /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		63CD3C0D221DF423008654DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63CD3C0E221DF48D008654DE /* FastSigninRequestParameters.swift */,
+				63CD3C10221DF4A0008654DE /* FastSigninResponse.swift */,
+				63CD3C12221DF4AE008654DE /* Assistant.swift */,
+				63CD3C14221DFA6C008654DE /* Credentials.swift */,
+				63373E89221E61B700B9981B /* Hotel.swift */,
+				63373E95221E65C900B9981B /* ExpositorSigninResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC7157FFC7D672A2206B2B6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E94126D702C0FBB8B117D97D /* Pods-Conapeme 2019.debug.xcconfig */,
+				068EEE8CDF5E915428F87070 /* Pods-Conapeme 2019.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDD274B348B1D07C157404ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E82BDBD73663664E46F21D96 /* Pods_Conapeme_2019.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63CD3BFB221DE9EC008654DE /* Build configuration list for PBXNativeTarget "Conapeme 2019" */;
 			buildPhases = (
+				BF6006DDB22F4EA3753E1D5F /* [CP] Check Pods Manifest.lock */,
 				63CD3BE5221DE9EB008654DE /* Sources */,
 				63CD3BE6221DE9EB008654DE /* Frameworks */,
 				63CD3BE7221DE9EB008654DE /* Resources */,
+				413B7234AC4A37EAA2BE6D9E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,35 +316,114 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63373E80221E606A00B9981B /* 2.pdf in Resources */,
 				63CD3BF7221DE9EC008654DE /* LaunchScreen.storyboard in Resources */,
+				63373E86221E60BB00B9981B /* hoteles.json in Resources */,
+				63373E81221E606A00B9981B /* 1.pdf in Resources */,
+				63373E83221E607300B9981B /* montaje.pdf in Resources */,
 				63CD3BF4221DE9EC008654DE /* Assets.xcassets in Resources */,
-				63CD3BF2221DE9EB008654DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		413B7234AC4A37EAA2BE6D9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Conapeme 2019/Pods-Conapeme 2019-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Disk/Disk.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Disk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Conapeme 2019/Pods-Conapeme 2019-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF6006DDB22F4EA3753E1D5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Conapeme 2019-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63CD3BE5221DE9EB008654DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63CD3BEF221DE9EB008654DE /* ViewController.swift in Sources */,
+				63373E90221E623100B9981B /* ExpositorsManualViewController.swift in Sources */,
+				63373E8C221E61D800B9981B /* EventPlaneViewController.swift in Sources */,
+				63CD3C04221DF20B008654DE /* SigninViewController.swift in Sources */,
+				63373E94221E633300B9981B /* MontajeViewController.swift in Sources */,
+				63373E7A221E5C7A00B9981B /* String.swift in Sources */,
+				63373E7C221E604400B9981B /* ScheduleViewController.swift in Sources */,
+				63373E88221E619100B9981B /* HotelsListViewController.swift in Sources */,
+				63373E6A221E510E00B9981B /* SideMenuTableView.swift in Sources */,
+				63373E73221E56F300B9981B /* constants.swift in Sources */,
+				63CD3C0F221DF48D008654DE /* FastSigninRequestParameters.swift in Sources */,
+				63373E68221E50E100B9981B /* SideMenu.swift in Sources */,
+				63373E64221E495F00B9981B /* SinginViewControllerDelegate.swift in Sources */,
+				63CD3C0A221DF27B008654DE /* UIColor.swift in Sources */,
+				63373E8E221E621000B9981B /* EventLocationViewController.swift in Sources */,
 				63CD3BED221DE9EB008654DE /* AppDelegate.swift in Sources */,
+				63373E92221E62BA00B9981B /* EventDateViewController.swift in Sources */,
+				63373E78221E5C3F00B9981B /* CPMTextNode.swift in Sources */,
+				63CD3BFF221DEB64008654DE /* MasterViewController.swift in Sources */,
+				63373E66221E4E4A00B9981B /* SignoutDelegate.swift in Sources */,
+				63CD3C15221DFA6C008654DE /* Credentials.swift in Sources */,
+				63CD3C07221DF242008654DE /* CPMTextField.swift in Sources */,
+				63373E61221E48AD00B9981B /* UserProfileViewController.swift in Sources */,
+				63CD3C01221DEB79008654DE /* HomeViewController.swift in Sources */,
+				63373E96221E65C900B9981B /* ExpositorSigninResponse.swift in Sources */,
+				63CD3C11221DF4A0008654DE /* FastSigninResponse.swift in Sources */,
+				63CD3C0C221DF3FF008654DE /* CPMNetworkLayer.swift in Sources */,
+				63373E8A221E61B700B9981B /* Hotel.swift in Sources */,
+				63373E76221E5C3000B9981B /* HomeNode.swift in Sources */,
+				63CD3C13221DF4AE008654DE /* Assistant.swift in Sources */,
+				63373E71221E515D00B9981B /* SideMenuItemCell.swift in Sources */,
+				63373E6F221E514100B9981B /* MenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		63CD3BF0221DE9EB008654DE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63CD3BF1221DE9EB008654DE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		63CD3BF5221DE9EC008654DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,9 +553,11 @@
 		};
 		63CD3BFC221DE9EC008654DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E94126D702C0FBB8B117D97D /* Pods-Conapeme 2019.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GQQ3NDG4CP;
 				INFOPLIST_FILE = "Conapeme 2019/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +572,11 @@
 		};
 		63CD3BFD221DE9EC008654DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 068EEE8CDF5E915428F87070 /* Pods-Conapeme 2019.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GQQ3NDG4CP;
 				INFOPLIST_FILE = "Conapeme 2019/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

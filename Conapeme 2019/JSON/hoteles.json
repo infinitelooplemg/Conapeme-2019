@@ -1,0 +1,116 @@
+{
+    "hotels": [
+        {
+            "name": "Westin",
+            "available": false,
+            "description": "",
+            "price": 0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/e85cf943-bfa3-4731-b506-5b79c605d823.png/:/cr=t:0%25,l:14.72%25,w:67.64%25,h:100%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "Real Inn",
+            "available": true,
+            "description": "Plan Europeo (Sin Alimentos)",
+            "price": 1950.0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/ed8b335c-ad6e-4c49-866e-3961bb6d3979.png/:/cr=t:0%25,l:23.48%25,w:61.37%25,h:100%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "Fiesta Inn Expo",
+            "available": true,
+            "description": "Plan Europeo (Sin Alimentos)",
+            "price": 1950.0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/50853b1c-4900-4939-af2c-ebebacaf759e.jpg/:/cr=t:0%25,l:11.9%25,w:54.76%25,h:100%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "Holliday Inn Express GDL. Expo",
+            "available": true,
+            "description": "Desayuno Americano Tipo Buffet",
+            "price": 1900.0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/3d216c4c-cce7-424c-9ae2-42844d51b4b5.png/:/cr=t:0%25,l:5.09%25,w:65.06%25,h:100%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "GDL. Plaza Expo Business Class",
+            "available": true,
+            "description": "Desayuno Americano Tipo Buffet",
+            "price": 1950.0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/80d58590-f75b-47da-ba8f-d5ead1a8c173.png/:/cr=t:0%25,l:0%25,w:67.75%25,h:100%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "Presidente Intercontinental",
+            "available": true,
+            "description": "Plan Europeo (Sin Alimentos)",
+            "price": 1900.0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/cdc84fce-5838-4725-97a9-bf9682be046e.png/:/cr=t:0%25,l:0%25,w:66.43%25,h:100%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "Holliday Inn GDL. Expo",
+            "available": true,
+            "description": "Plan Europeo (Sin Alimentos)",
+            "price": 1800.0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/571147f2-60c3-4073-aa4e-1b08af8a129e.png/:/cr=t:0%25,l:0%25,w:72%25,h:100%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "Wyndham Garden GDL. Expo",
+            "available": true,
+            "description": "Desayuno Americano Tipo Buffet",
+            "price": 1800.0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/d6721520-c757-41a3-a274-c097068703ff.png/:/cr=t:0%25,l:28.09%25,w:71.91%25,h:100%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "GDL. Plaza Ejecutivo",
+            "available": true,
+            "description": "Desayuno Americano Tipo Buffet",
+            "price": 1900.0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/aea2372a-9dd0-4faf-a0c5-0d876d0f870a.png/:/cr=t:11.37%25,l:0%25,w:100%25,h:88.63%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "Fiesta Americana Minerva",
+            "available": true,
+            "description": "Plan Europeo (Sin Alimentos)",
+            "price": 2000.0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/35a3864f-9af6-4e80-a0ae-eb5230ec0bda.png/:/cr=t:0%25,l:1.25%25,w:72.14%25,h:100%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "Riu Plaza GDL.",
+            "available": false,
+            "description": "",
+            "price": 0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/a0e4e85e-790a-4e8b-a262-cdb07a371323.png/:/cr=t:0%25,l:13.17%25,w:86.83%25,h:100%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "Holliday Inn GDL. Select",
+            "available": true,
+            "description": "Plan Europeo (Sin Alimentos)",
+            "price": 1850.0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/8ac52781-8a68-4700-b6d0-34c79bd829a1.jpeg/:/cr=t:0%25,l:54.06%25,w:31.26%25,h:100%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "Hampton Inn by Hilton GDL. Expo",
+            "available": true,
+            "description":  "Desayuno Americano Tipo Buffet",
+            "price": 1950.0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/c7eebfcc-bccb-451b-9fd3-03dc8e4e62e9.png/:/cr=t:0%25,l:36.76%25,w:61.27%25,h:100%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "Hard Rock Hotel GDL.",
+            "available": false,
+            "description":  "",
+            "price": 0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/4e7246fe-2b30-46ab-9e8a-b4ea63187922.png/:/cr=t:0%25,l:0%25,w:100%25,h:64.6%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "Krystal Urban GDL.",
+            "available": true,
+            "description": "Plan Europeo (Sin Alimentos)",
+            "price": 1800.0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/49afa97f-9755-4b82-8d8f-c7c61dd74112.png/:/cr=t:22.32%25,l:6.17%25,w:80.65%25,h:59.96%25/rs=w:223,h:223,cg:true"
+        },
+        {
+            "name": "Hilton Guadalajara",
+            "available": false,
+            "description":  "",
+            "price": 0,
+            "img_uri": "https://img1.wsimg.com/isteam/ip/294bae2c-73bb-4934-aa36-652b231b10aa/769d645d-dfcf-4f2d-96c2-5a666a114da0.png/:/cr=t:0%25,l:20.01%25,w:71.9%25,h:100%25/rs=w:223,h:223,cg:true"
+        }
+    ]
+}
