@@ -25,7 +25,6 @@ class UserProfileViewController:UIViewController {
         navigationItem.rightBarButtonItem = signoutButton
     }
     
-    
     @objc func dismissVC(){
         dismiss(animated: true, completion: nil)
     }

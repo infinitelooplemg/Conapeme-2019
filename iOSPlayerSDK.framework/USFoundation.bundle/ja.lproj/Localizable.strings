@@ -1,0 +1,13 @@
+"app.date.justnow" = "たった今";
+"app.date.relative.day" = "%d 日前";
+"app.date.relative.days" = "%d 日前";
+"app.date.relative.hour" = "%d時間前";
+"app.date.relative.hours" = "%d 時間前";
+"app.date.relative.minute" = "%d 分前";
+"app.date.relative.minutes" = "%d 分前";
+"app.date.relative.month" = "%d ヶ月前";
+"app.date.relative.months" = "%d ヶ月前";
+"app.date.relative.week" = "%d 週間前";
+"app.date.relative.weeks" = "%d 週間前";
+"app.date.relative.year" = "%d 年前";
+"app.date.relative.years" = "%d 年前";

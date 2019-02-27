@@ -12,6 +12,7 @@ import AsyncDisplayKit
 import Disk
 import FirebaseMessaging
 
+
 class HomeViewController:ASViewController<ASDisplayNode> {
     
     weak var container:MasterViewController?
@@ -37,6 +38,7 @@ class HomeViewController:ASViewController<ASDisplayNode> {
         initializeNavigationBar()
         extendedLayoutIncludesOpaqueBars = false
         navigationController?.navigationBar.isTranslucent = false
+      
     }
     
     
@@ -136,8 +138,10 @@ class HomeViewController:ASViewController<ASDisplayNode> {
             presentVC(vc: HotelsListViewController())
         case .montaje:
             presentVC(vc: MontajeViewController())
-            //        case .live:
-        //            presentVC(vc: LiveViewController())
+        case .stands:
+            presentVC(vc: StandViewController())
+                    case .live:
+                    presentVC(vc: LiveViewController())
         default:
             print("default")
         }

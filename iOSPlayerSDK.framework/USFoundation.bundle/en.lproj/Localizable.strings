@@ -1,0 +1,39 @@
+﻿/* Just now */
+"app.date.justnow" = "Just now";
+
+/* %d day ago */
+"app.date.relative.day" = "%d day ago";
+
+/* %d days ago */
+"app.date.relative.days" = "%d days ago";
+
+/* %d hour ago */
+"app.date.relative.hour" = "%d hour ago";
+
+/* %d hours ago */
+"app.date.relative.hours" = "%d hours ago";
+
+/* %d minute ago */
+"app.date.relative.minute" = "%d minute ago";
+
+/* %d minutes ago */
+"app.date.relative.minutes" = "%d minutes ago";
+
+/* %d month ago */
+"app.date.relative.month" = "%d month ago";
+
+/* %d months ago */
+"app.date.relative.months" = "%d months ago";
+
+/* %d week ago */
+"app.date.relative.week" = "%d week ago";
+
+/* %d weeks ago */
+"app.date.relative.weeks" = "%d weeks ago";
+
+/* %d year ago */
+"app.date.relative.year" = "%d year ago";
+
+/* %d years ago */
+"app.date.relative.years" = "%d years ago";
+

@@ -1,0 +1,6 @@
+framework module iOSPlayerSDK {
+  umbrella header "iOSPlayerSDK.h"
+
+  export *
+  module * { export * }
+}

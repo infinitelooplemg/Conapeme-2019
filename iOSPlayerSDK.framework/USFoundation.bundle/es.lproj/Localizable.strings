@@ -1,0 +1,13 @@
+"app.date.justnow" = "Ahora mismo";
+"app.date.relative.day" = "%d day ago";
+"app.date.relative.days" = "Hace %d días";
+"app.date.relative.hour" = "Hace %d hora";
+"app.date.relative.hours" = "Hace %d horas";
+"app.date.relative.minute" = "Hace %d minuto";
+"app.date.relative.minutes" = "Hace %d minutos";
+"app.date.relative.month" = "Hace %d mes";
+"app.date.relative.months" = "Hace %d meses";
+"app.date.relative.week" = "Hace %d semana";
+"app.date.relative.weeks" = "Hace %d semanas";
+"app.date.relative.year" = "Hace %d año";
+"app.date.relative.years" = "Hace %d años";

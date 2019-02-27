@@ -181,7 +181,7 @@ class SigninViewController:UIViewController {
         fastSigninButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
         fastSigninButton.topAnchor.constraint(equalTo: signinButton.bottomAnchor, constant: 8).isActive = true
         
-        backButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        backButton.topAnchor.constraint(equalTo: fastSigninButton.bottomAnchor,constant:8).isActive = true
         backButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
         backButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8).isActive = true
         
@@ -211,6 +211,7 @@ class SigninViewController:UIViewController {
     
     
     @objc func signin(){
+          ERProgressHud.sharedInstance()?.show(withTitle: "Iniciando Sesión")
         guard let id = loginField.text else {
             return
         }
@@ -237,6 +238,7 @@ class SigninViewController:UIViewController {
     }
     
     func handleExpositorResponse(response:ExpositorSigninResponse){
+          ERProgressHud.sharedInstance()?.hide()
         switch response.code {
         case 200:
             guard let expositor = response.result else {
@@ -252,6 +254,7 @@ class SigninViewController:UIViewController {
     }
     
     func handleAssistantResponse(response:FastSigninResponse){
+            ERProgressHud.sharedInstance()?.hide()
         switch response.code {
         case 200:
             guard let assistant = response.result else {
@@ -291,6 +294,7 @@ class SigninViewController:UIViewController {
 
 extension SigninViewController:FastSigninDelegate{
     func userDidScannQRCode(assistantId: String) {
+          ERProgressHud.sharedInstance()?.show(withTitle: "Iniciando Sesión")
         nl.fastSignin(asisstantId: assistantId) { (response,err)  in
             if(err != nil){
                 self.showError(message: "Verifique su conexión a internet y vuelva a intentarlo")
@@ -302,3 +306,5 @@ extension SigninViewController:FastSigninDelegate{
     
     
 }
+
+

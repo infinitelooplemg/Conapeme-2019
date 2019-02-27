@@ -21,7 +21,6 @@
 		63373E7C221E604400B9981B /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E7B221E604400B9981B /* ScheduleViewController.swift */; };
 		63373E80221E606A00B9981B /* 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 63373E7E221E606A00B9981B /* 2.pdf */; };
 		63373E81221E606A00B9981B /* 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 63373E7F221E606A00B9981B /* 1.pdf */; };
-		63373E83221E607300B9981B /* montaje.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 63373E82221E607300B9981B /* montaje.pdf */; };
 		63373E86221E60BB00B9981B /* hoteles.json in Resources */ = {isa = PBXBuildFile; fileRef = 63373E85221E60BB00B9981B /* hoteles.json */; };
 		63373E88221E619100B9981B /* HotelsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E87221E619100B9981B /* HotelsListViewController.swift */; };
 		63373E8A221E61B700B9981B /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E89221E61B700B9981B /* Hotel.swift */; };
@@ -47,8 +46,30 @@
 		63CD3C11221DF4A0008654DE /* FastSigninResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3C10221DF4A0008654DE /* FastSigninResponse.swift */; };
 		63CD3C13221DF4AE008654DE /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3C12221DF4AE008654DE /* Assistant.swift */; };
 		63CD3C15221DFA6C008654DE /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3C14221DFA6C008654DE /* Credentials.swift */; };
+		A037E97F2227201E00A2B45A /* ERProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = A037E97E2227201E00A2B45A /* ERProgressHud.m */; };
+		A037E9812227251B00A2B45A /* montaje.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A037E9802227251B00A2B45A /* montaje.pdf */; };
+		A037E9832227252500A2B45A /* tand.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A037E9822227252400A2B45A /* tand.pdf */; };
+		A037E9852227255500A2B45A /* StandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A037E9842227255500A2B45A /* StandViewController.swift */; };
+		A037E9892227346F00A2B45A /* iOSPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A037E9882227346F00A2B45A /* iOSPlayerSDK.framework */; };
+		A037E98A2227346F00A2B45A /* iOSPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A037E9882227346F00A2B45A /* iOSPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A037E98D2227350D00A2B45A /* strip-dynamic-frameworks.sh in Resources */ = {isa = PBXBuildFile; fileRef = A037E98C2227350D00A2B45A /* strip-dynamic-frameworks.sh */; };
+		A037E9902227389800A2B45A /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A037E98F2227389800A2B45A /* StreamViewController.swift */; };
 		E071A4E1C0998110DC600554 /* Pods_Conapeme_2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82BDBD73663664E46F21D96 /* Pods_Conapeme_2019.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A037E98B2227346F00A2B45A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A037E98A2227346F00A2B45A /* iOSPlayerSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		068EEE8CDF5E915428F87070 /* Pods-Conapeme 2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conapeme 2019.release.xcconfig"; path = "Target Support Files/Pods-Conapeme 2019/Pods-Conapeme 2019.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,7 +87,6 @@
 		63373E7B221E604400B9981B /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		63373E7E221E606A00B9981B /* 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.pdf; sourceTree = "<group>"; };
 		63373E7F221E606A00B9981B /* 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1.pdf; sourceTree = "<group>"; };
-		63373E82221E607300B9981B /* montaje.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = montaje.pdf; sourceTree = "<group>"; };
 		63373E85221E60BB00B9981B /* hoteles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hoteles.json; sourceTree = "<group>"; };
 		63373E87221E619100B9981B /* HotelsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsListViewController.swift; sourceTree = "<group>"; };
 		63373E89221E61B700B9981B /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
@@ -94,6 +114,16 @@
 		63CD3C10221DF4A0008654DE /* FastSigninResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastSigninResponse.swift; sourceTree = "<group>"; };
 		63CD3C12221DF4AE008654DE /* Assistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
 		63CD3C14221DFA6C008654DE /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		A037E97A22271FED00A2B45A /* Conapeme 2019-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Conapeme 2019-Bridging-Header.h"; sourceTree = "<group>"; };
+		A037E97D2227200B00A2B45A /* ERProgressHud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERProgressHud.h; sourceTree = "<group>"; };
+		A037E97E2227201E00A2B45A /* ERProgressHud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERProgressHud.m; sourceTree = "<group>"; };
+		A037E9802227251B00A2B45A /* montaje.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = montaje.pdf; sourceTree = "<group>"; };
+		A037E9822227252400A2B45A /* tand.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = tand.pdf; path = ../../../../Documents/tand.pdf; sourceTree = "<group>"; };
+		A037E9842227255500A2B45A /* StandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandViewController.swift; sourceTree = "<group>"; };
+		A037E9862227346200A2B45A /* iOSPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iOSPlayerSDK.framework; path = "../../Downloads/ibm-player-sdk-ios-v1/Framework/iOSPlayerSDK.framework"; sourceTree = "<group>"; };
+		A037E9882227346F00A2B45A /* iOSPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOSPlayerSDK.framework; sourceTree = "<group>"; };
+		A037E98C2227350D00A2B45A /* strip-dynamic-frameworks.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "strip-dynamic-frameworks.sh"; sourceTree = "<group>"; };
+		A037E98F2227389800A2B45A /* StreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
 		A054899922266FC90094C6C1 /* Conapeme 2019.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Conapeme 2019.entitlements"; sourceTree = "<group>"; };
 		E82BDBD73663664E46F21D96 /* Pods_Conapeme_2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conapeme_2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94126D702C0FBB8B117D97D /* Pods-Conapeme 2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conapeme 2019.debug.xcconfig"; path = "Target Support Files/Pods-Conapeme 2019/Pods-Conapeme 2019.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A037E9892227346F00A2B45A /* iOSPlayerSDK.framework in Frameworks */,
 				E071A4E1C0998110DC600554 /* Pods_Conapeme_2019.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,7 +172,8 @@
 		63373E7D221E604D00B9981B /* PDF */ = {
 			isa = PBXGroup;
 			children = (
-				63373E82221E607300B9981B /* montaje.pdf */,
+				A037E9822227252400A2B45A /* tand.pdf */,
+				A037E9802227251B00A2B45A /* montaje.pdf */,
 				63373E7F221E606A00B9981B /* 1.pdf */,
 				63373E7E221E606A00B9981B /* 2.pdf */,
 			);
@@ -159,6 +191,8 @@
 		63CD3BE0221DE9EB008654DE = {
 			isa = PBXGroup;
 			children = (
+				A037E98C2227350D00A2B45A /* strip-dynamic-frameworks.sh */,
+				A037E9882227346F00A2B45A /* iOSPlayerSDK.framework */,
 				63CD3BEB221DE9EB008654DE /* Conapeme 2019 */,
 				63CD3BEA221DE9EB008654DE /* Products */,
 				EC7157FFC7D672A2206B2B6A /* Pods */,
@@ -177,6 +211,7 @@
 		63CD3BEB221DE9EB008654DE /* Conapeme 2019 */ = {
 			isa = PBXGroup;
 			children = (
+				A037E97922271FCF00A2B45A /* ProgressHUD */,
 				A054899922266FC90094C6C1 /* Conapeme 2019.entitlements */,
 				63C40CF2222643D400C55DD5 /* GoogleService-Info.plist */,
 				63373E84221E608B00B9981B /* JSON */,
@@ -213,6 +248,8 @@
 				63373E91221E62BA00B9981B /* EventDateViewController.swift */,
 				63373E93221E633300B9981B /* MontajeViewController.swift */,
 				63C40CF02226291500C55DD5 /* FastSigninViewController.swift */,
+				A037E9842227255500A2B45A /* StandViewController.swift */,
+				A037E98F2227389800A2B45A /* StreamViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -250,6 +287,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A037E97922271FCF00A2B45A /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A037E97A22271FED00A2B45A /* Conapeme 2019-Bridging-Header.h */,
+				A037E97D2227200B00A2B45A /* ERProgressHud.h */,
+				A037E97E2227201E00A2B45A /* ERProgressHud.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
 		EC7157FFC7D672A2206B2B6A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +309,7 @@
 		EDD274B348B1D07C157404ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A037E9862227346200A2B45A /* iOSPlayerSDK.framework */,
 				E82BDBD73663664E46F21D96 /* Pods_Conapeme_2019.framework */,
 			);
 			name = Frameworks;
@@ -279,6 +327,8 @@
 				63CD3BE6221DE9EB008654DE /* Frameworks */,
 				63CD3BE7221DE9EB008654DE /* Resources */,
 				413B7234AC4A37EAA2BE6D9E /* [CP] Embed Pods Frameworks */,
+				A037E98B2227346F00A2B45A /* Embed Frameworks */,
+				A037E98E222735CA00A2B45A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -301,6 +351,7 @@
 				TargetAttributes = {
 					63CD3BE8221DE9EB008654DE = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -334,11 +385,13 @@
 			files = (
 				63373E80221E606A00B9981B /* 2.pdf in Resources */,
 				63CD3BF7221DE9EC008654DE /* LaunchScreen.storyboard in Resources */,
+				A037E9812227251B00A2B45A /* montaje.pdf in Resources */,
+				A037E98D2227350D00A2B45A /* strip-dynamic-frameworks.sh in Resources */,
 				63373E86221E60BB00B9981B /* hoteles.json in Resources */,
 				63373E81221E606A00B9981B /* 1.pdf in Resources */,
-				63373E83221E607300B9981B /* montaje.pdf in Resources */,
 				63CD3BF4221DE9EC008654DE /* Assets.xcassets in Resources */,
 				63C40CF3222643D500C55DD5 /* GoogleService-Info.plist in Resources */,
+				A037E9832227252500A2B45A /* tand.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +434,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Conapeme 2019/Pods-Conapeme 2019-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A037E98E222735CA00A2B45A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/strip-dynamic-frameworks.sh\"\n";
+		};
 		BF6006DDB22F4EA3753E1D5F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,11 +487,13 @@
 				63C40CEF2226280600C55DD5 /* FastSigninDelegate.swift in Sources */,
 				63373E7A221E5C7A00B9981B /* String.swift in Sources */,
 				63373E7C221E604400B9981B /* ScheduleViewController.swift in Sources */,
+				A037E9852227255500A2B45A /* StandViewController.swift in Sources */,
 				63373E88221E619100B9981B /* HotelsListViewController.swift in Sources */,
 				63373E6A221E510E00B9981B /* SideMenuTableView.swift in Sources */,
 				63373E73221E56F300B9981B /* constants.swift in Sources */,
 				63CD3C0F221DF48D008654DE /* FastSigninRequestParameters.swift in Sources */,
 				63373E68221E50E100B9981B /* SideMenu.swift in Sources */,
+				A037E97F2227201E00A2B45A /* ERProgressHud.m in Sources */,
 				63373E64221E495F00B9981B /* SinginViewControllerDelegate.swift in Sources */,
 				63CD3C0A221DF27B008654DE /* UIColor.swift in Sources */,
 				63373E8E221E621000B9981B /* EventLocationViewController.swift in Sources */,
@@ -440,6 +512,7 @@
 				63CD3C0C221DF3FF008654DE /* CPMNetworkLayer.swift in Sources */,
 				63373E8A221E61B700B9981B /* Hotel.swift in Sources */,
 				63373E76221E5C3000B9981B /* HomeNode.swift in Sources */,
+				A037E9902227389800A2B45A /* StreamViewController.swift in Sources */,
 				63CD3C13221DF4AE008654DE /* Assistant.swift in Sources */,
 				63373E71221E515D00B9981B /* SideMenuItemCell.swift in Sources */,
 				63373E6F221E514100B9981B /* MenuItem.swift in Sources */,
@@ -581,9 +654,15 @@
 			baseConfigurationReference = E94126D702C0FBB8B117D97D /* Pods-Conapeme 2019.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Conapeme 2019/Conapeme 2019.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQQ3NDG4CP;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Conapeme 2019/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -591,6 +670,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "freeapps.Conapeme-2019";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Conapeme 2019/ProgressHUD/Conapeme 2019-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -601,9 +682,15 @@
 			baseConfigurationReference = 068EEE8CDF5E915428F87070 /* Pods-Conapeme 2019.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Conapeme 2019/Conapeme 2019.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQQ3NDG4CP;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Conapeme 2019/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -611,6 +698,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "freeapps.Conapeme-2019";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Conapeme 2019/ProgressHUD/Conapeme 2019-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
