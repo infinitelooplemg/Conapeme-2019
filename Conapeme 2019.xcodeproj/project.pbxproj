@@ -31,6 +31,9 @@
 		63373E92221E62BA00B9981B /* EventDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E91221E62BA00B9981B /* EventDateViewController.swift */; };
 		63373E94221E633300B9981B /* MontajeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E93221E633300B9981B /* MontajeViewController.swift */; };
 		63373E96221E65C900B9981B /* ExpositorSigninResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63373E95221E65C900B9981B /* ExpositorSigninResponse.swift */; };
+		63C40CEF2226280600C55DD5 /* FastSigninDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C40CEE2226280600C55DD5 /* FastSigninDelegate.swift */; };
+		63C40CF12226291500C55DD5 /* FastSigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C40CF02226291500C55DD5 /* FastSigninViewController.swift */; };
+		63C40CF3222643D500C55DD5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63C40CF2222643D400C55DD5 /* GoogleService-Info.plist */; };
 		63CD3BED221DE9EB008654DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD3BEC221DE9EB008654DE /* AppDelegate.swift */; };
 		63CD3BF4221DE9EC008654DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63CD3BF3221DE9EC008654DE /* Assets.xcassets */; };
 		63CD3BF7221DE9EC008654DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CD3BF5221DE9EC008654DE /* LaunchScreen.storyboard */; };
@@ -73,6 +76,9 @@
 		63373E91221E62BA00B9981B /* EventDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateViewController.swift; sourceTree = "<group>"; };
 		63373E93221E633300B9981B /* MontajeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontajeViewController.swift; sourceTree = "<group>"; };
 		63373E95221E65C900B9981B /* ExpositorSigninResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositorSigninResponse.swift; sourceTree = "<group>"; };
+		63C40CEE2226280600C55DD5 /* FastSigninDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastSigninDelegate.swift; sourceTree = "<group>"; };
+		63C40CF02226291500C55DD5 /* FastSigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastSigninViewController.swift; sourceTree = "<group>"; };
+		63C40CF2222643D400C55DD5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		63CD3BE9221DE9EB008654DE /* Conapeme 2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conapeme 2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CD3BEC221DE9EB008654DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63CD3BF3221DE9EC008654DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,6 +115,7 @@
 			children = (
 				63373E63221E495F00B9981B /* SinginViewControllerDelegate.swift */,
 				63373E65221E4E4A00B9981B /* SignoutDelegate.swift */,
+				63C40CEE2226280600C55DD5 /* FastSigninDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -169,6 +176,7 @@
 		63CD3BEB221DE9EB008654DE /* Conapeme 2019 */ = {
 			isa = PBXGroup;
 			children = (
+				63C40CF2222643D400C55DD5 /* GoogleService-Info.plist */,
 				63373E84221E608B00B9981B /* JSON */,
 				63373E7D221E604D00B9981B /* PDF */,
 				63373E74221E5C1700B9981B /* Nodes */,
@@ -202,6 +210,7 @@
 				63373E8F221E623100B9981B /* ExpositorsManualViewController.swift */,
 				63373E91221E62BA00B9981B /* EventDateViewController.swift */,
 				63373E93221E633300B9981B /* MontajeViewController.swift */,
+				63C40CF02226291500C55DD5 /* FastSigninViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -322,6 +331,7 @@
 				63373E81221E606A00B9981B /* 1.pdf in Resources */,
 				63373E83221E607300B9981B /* montaje.pdf in Resources */,
 				63CD3BF4221DE9EC008654DE /* Assets.xcassets in Resources */,
+				63C40CF3222643D500C55DD5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +401,7 @@
 				63373E8C221E61D800B9981B /* EventPlaneViewController.swift in Sources */,
 				63CD3C04221DF20B008654DE /* SigninViewController.swift in Sources */,
 				63373E94221E633300B9981B /* MontajeViewController.swift in Sources */,
+				63C40CEF2226280600C55DD5 /* FastSigninDelegate.swift in Sources */,
 				63373E7A221E5C7A00B9981B /* String.swift in Sources */,
 				63373E7C221E604400B9981B /* ScheduleViewController.swift in Sources */,
 				63373E88221E619100B9981B /* HotelsListViewController.swift in Sources */,
@@ -402,6 +413,7 @@
 				63CD3C0A221DF27B008654DE /* UIColor.swift in Sources */,
 				63373E8E221E621000B9981B /* EventLocationViewController.swift in Sources */,
 				63CD3BED221DE9EB008654DE /* AppDelegate.swift in Sources */,
+				63C40CF12226291500C55DD5 /* FastSigninViewController.swift in Sources */,
 				63373E92221E62BA00B9981B /* EventDateViewController.swift in Sources */,
 				63373E78221E5C3F00B9981B /* CPMTextNode.swift in Sources */,
 				63CD3BFF221DEB64008654DE /* MasterViewController.swift in Sources */,

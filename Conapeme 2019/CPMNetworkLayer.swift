@@ -55,8 +55,10 @@ final class CPMNetworkLayer {
                 return
             }
             
+           
             do {
                 let response = try JSONDecoder().decode(FastSigninResponse.self, from: data)
+                let ds = String(data: data, encoding: .utf8)
                 DispatchQueue.main.async {
                     completion(response)
                 }
@@ -70,7 +72,7 @@ final class CPMNetworkLayer {
     }
     
     func expositorSignin(expositorId:String,completion: @escaping (_ response:ExpositorSigninResponse) -> ()) {
-        components.path = "/assistant/expositors/signin"
+        components.path = "/expositors/signin"
         
         guard let url = components.url else { fatalError("Could not create URL from components") }
         
@@ -90,7 +92,7 @@ final class CPMNetworkLayer {
         let session = URLSession(configuration: config)
         let task = session.dataTask(with: request) { (responseData, response, responseError) in
             guard let data = responseData else {
-    
+                
                 return
             }
             
@@ -108,5 +110,5 @@ final class CPMNetworkLayer {
         task.resume()
     }
     
-
+    
 }

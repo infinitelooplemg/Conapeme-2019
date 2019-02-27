@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "73334C89F41D347A69206FE0CCCDBB92"
+               BuildableName = "PINRemoteImage.framework"
                BlueprintName = "PINRemoteImage"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "PINRemoteImage.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

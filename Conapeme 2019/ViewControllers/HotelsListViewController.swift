@@ -27,6 +27,8 @@ class HotelsListViewController:UIViewController {
         loadData()
         setupNavitagionItems()
         setupTableView()
+        extendedLayoutIncludesOpaqueBars = false
+        navigationController?.navigationBar.isTranslucent = false
     }
     
     func setupTableView(){
@@ -120,7 +122,6 @@ class HotelCell:UITableViewCell {
     var photo:UIImageView = {
         let p = UIImageView(frame: .zero)
         p.translatesAutoresizingMaskIntoConstraints = false
-        p.backgroundColor = .blue
         p.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
         p.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
         p.contentMode = .scaleAspectFit

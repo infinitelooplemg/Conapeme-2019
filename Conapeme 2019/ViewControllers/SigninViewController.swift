@@ -76,7 +76,7 @@ class SigninViewController:UIViewController {
         b.translatesAutoresizingMaskIntoConstraints = false
         return b
     }()
- 
+    
     let typeUserSegment:UISegmentedControl =  {
         let s = UISegmentedControl(items: ["Asistente","Expositor"])
         s.selectedSegmentIndex = 0
@@ -188,7 +188,9 @@ class SigninViewController:UIViewController {
     }
     
     @objc func showFastSigninController() {
-        
+        let vc = FastSigninViewController()
+        vc.delegate = self
+        present(vc, animated: true, completion: nil)
     }
     
     @objc func dismissVC(){
@@ -212,16 +214,33 @@ class SigninViewController:UIViewController {
         guard let id = loginField.text else {
             return
         }
-
+        
         let index = typeUserSegment.selectedSegmentIndex
         if(index == 0) {
             nl.fastSignin(asisstantId: id) { response in
-            self.handleAssistantResponse(response: response)
-        }
+                self.handleAssistantResponse(response: response)
+            }
         } else {
-            print("expositor")
+            nl.expositorSignin(expositorId: id) { response in
+                self.handleExpositorResponse(response: response)
+            }
         }
-      
+        
+    }
+    
+    func handleExpositorResponse(response:ExpositorSigninResponse){
+        switch response.code {
+        case 200:
+            guard let expositor = response.result else {
+                return
+            }
+            let credentials = Credentials(userId:expositor.id_expositor!,userType:0,virtual:0)
+            saveCredentialsToDisk(credentials: credentials)
+        case 400:
+            loginErrorAlert(message: response.errorMessage ?? "Error al iniciar sesión")
+        default :
+            return
+        }
     }
     
     func handleAssistantResponse(response:FastSigninResponse){
@@ -230,13 +249,20 @@ class SigninViewController:UIViewController {
             guard let assistant = response.result else {
                 return
             }
-            let credentials = Credentials(userId:assistant.id!,userType:1)
+            let credentials = Credentials(userId:assistant.id!,userType:1,virtual:assistant.virtual!.data[0])
             saveCredentialsToDisk(credentials: credentials)
         case 400:
-            print("mal xs")
+            loginErrorAlert(message: response.errorMessage ?? "Error al iniciar sesión")
         default :
             return
         }
+    }
+    
+    func loginErrorAlert(message:String){
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
     func saveCredentialsToDisk(credentials:Credentials){
@@ -253,3 +279,14 @@ class SigninViewController:UIViewController {
 }
 
 
+
+
+extension SigninViewController:FastSigninDelegate{
+    func userDidScannQRCode(assistantId: String) {
+        nl.fastSignin(asisstantId: assistantId) { response in
+            self.handleAssistantResponse(response: response)
+        }
+    }
+    
+    
+}

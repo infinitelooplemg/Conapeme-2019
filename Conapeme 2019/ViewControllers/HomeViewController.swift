@@ -34,16 +34,31 @@ class HomeViewController:ASViewController<ASDisplayNode> {
         readCredentials()
         initializeSideMenu()
         initializeNavigationBar()
+        extendedLayoutIncludesOpaqueBars = false
+        navigationController?.navigationBar.isTranslucent = false
     }
     
     
     func initializeSideMenu(){
-        let items = (credentials == nil) ? GuestMenuItems : AssitantMenuItems
+        var items:[MenuItem] = []
+        if(credentials == nil) {
+            items = GuestMenuItems
+        } else {
+            if(credentials?.userType == 1){
+                if(credentials?.virtual == 1){
+                    items = VirtualAssitantMenuItems
+                } else {
+                    items = AssitantMenuItems
+                }
+            } else {
+                items = ExpositorMenuItems
+            }
+        }
         sideMenu = SideMenu(home: self, items: items)
     }
     
     func initializeNavigationBar(){
-        let resetContainerButton = UIBarButtonItem(title: "Perfil", style: .done, target: self, action: #selector(profileButtonPressed))
+        let resetContainerButton = UIBarButtonItem(title:  (credentials == nil) ? "Iniciar sesión" : "Cerrar Sesión", style: .done, target: self, action: #selector(profileButtonPressed))
         navigationItem.rightBarButtonItem = resetContainerButton
         let menuButton = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(toggleMenu))
         navigationItem.leftBarButtonItem = menuButton
@@ -58,8 +73,16 @@ class HomeViewController:ASViewController<ASDisplayNode> {
         if (credentials == nil) {
             presentSigninViewController()
         } else {
-            presentUserProfileViewController()
+            signout()
+            
         }
+    }
+    
+    func signout(){
+        do {
+            try   Disk.remove("credentials.json", from: .documents)
+            resetContainer()
+        } catch  {}
     }
     
     func presentSigninViewController(){ 
@@ -104,8 +127,8 @@ class HomeViewController:ASViewController<ASDisplayNode> {
             presentVC(vc: HotelsListViewController())
         case .montaje:
             presentVC(vc: MontajeViewController())
-//        case .live:
-//            presentVC(vc: LiveViewController())
+            //        case .live:
+        //            presentVC(vc: LiveViewController())
         default:
             print("default")
         }

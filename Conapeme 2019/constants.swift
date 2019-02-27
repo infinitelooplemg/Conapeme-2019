@@ -9,7 +9,9 @@
 import Foundation
 
 
-let GuestMenuItems:[MenuItem] = [.sede,.fechaEvento,.programaGeneral,.hoteles,.planoCongreso]
-let AssitantMenuItems:[MenuItem] = [.fechaEvento,.sede,.planoCongreso,.programaGeneral,.montaje,.stands,.encuestaProveedores,.hoteles,.servicios,.live]
+let GuestMenuItems:[MenuItem] = [.fechaEvento,.sede,.hoteles]
+let AssitantMenuItems:[MenuItem] = [.fechaEvento,.sede,.stands,.planoCongreso,.programaGeneral,.hoteles,]
+let VirtualAssitantMenuItems:[MenuItem] = [.fechaEvento,.sede,.stands,.planoCongreso,.programaGeneral,.hoteles,.live]
+let ExpositorMenuItems:[MenuItem] = [.manualExpositor,.planoCongreso,.montaje,.servicios,.stands,.hoteles]
 
 

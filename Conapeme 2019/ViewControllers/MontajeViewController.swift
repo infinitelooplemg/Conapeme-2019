@@ -25,6 +25,8 @@ class MontajeViewController:UIViewController {
         setupSubviews()
         layoutSubviews()
         setupNavitagionItems()
+        extendedLayoutIncludesOpaqueBars = false
+        navigationController?.navigationBar.isTranslucent = false
         //
         //        let url: URL! = URL(string: "http://developer.apple.com/iphone/library/documentation/UIKit/Reference/UIWebView_Class/UIWebView_Class.pdf")
         //        webView.load(URLRequest(url: url))

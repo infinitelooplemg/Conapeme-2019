@@ -27,6 +27,8 @@ class ScheduleViewController:UIViewController {
         setupNavitagionItems()
         
         navigationItem.title = "Programa"
+        extendedLayoutIncludesOpaqueBars = false
+        navigationController?.navigationBar.isTranslucent = false
         
         if let pdf = Bundle.main.url(forResource: "1", withExtension: "pdf", subdirectory: nil, localization: nil)  {
             let req = NSURLRequest(url: pdf)

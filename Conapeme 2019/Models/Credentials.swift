@@ -10,4 +10,5 @@ import Foundation
 struct Credentials:Codable{
     var userId:Int
     var userType:Int
+    var virtual:Int
 }

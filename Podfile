@@ -8,4 +8,7 @@ target 'Conapeme 2019' do
   # Pods for Conapeme 2019
   pod "Texture"
       pod 'Disk', '~> 0.4.0'
+      pod 'Firebase/Core'
+      
+
 end

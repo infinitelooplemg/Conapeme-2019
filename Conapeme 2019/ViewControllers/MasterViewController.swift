@@ -35,7 +35,7 @@ class MasterViewController: UIViewController {
         viewController.view.frame = view.bounds
         viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         viewController.didMove(toParent: self)
-        UIView.transition(with: self.view, duration: 0.5, options: .transitionCrossDissolve, animations: {
+        UIView.transition(with: self.view, duration: 0.5, options: .transitionFlipFromLeft, animations: {
             self.view.addSubview(viewController.view)
         }, completion: nil)
     }

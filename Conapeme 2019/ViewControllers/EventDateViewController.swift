@@ -55,6 +55,8 @@ class EventDateViewController: UIViewController {
         setupNavitagionItems()
         setupSubViews()
         layoutSubviews()
+        extendedLayoutIncludesOpaqueBars = false
+        navigationController?.navigationBar.isTranslucent = false
     }
     
     func setupSubViews() {

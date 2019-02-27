@@ -34,6 +34,8 @@ class EventPlaneViewController: UIViewController,UIScrollViewDelegate {
         setupNavitagionItems()
         setupViews()
         layoutSubviews()
+        extendedLayoutIncludesOpaqueBars = false
+        navigationController?.navigationBar.isTranslucent = false
     }
     
     func setupNavitagionItems(){

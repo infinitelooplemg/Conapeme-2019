@@ -13,4 +13,9 @@ class Assistant:Codable{
     var apellidop:String?
     var apellidom:String?
     var correo:String?
+    var virtual:Virtual?
+}
+
+class Virtual:Codable {
+    var data:[Int]
 }
