@@ -9,6 +9,7 @@ target 'Conapeme 2019' do
   pod "Texture"
       pod 'Disk', '~> 0.4.0'
       pod 'Firebase/Core'
+            pod 'Firebase/Messaging'
       
 
 end
