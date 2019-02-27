@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import AsyncDisplayKit
 import Disk
+import FirebaseMessaging
 
 class HomeViewController:ASViewController<ASDisplayNode> {
     
@@ -43,14 +44,19 @@ class HomeViewController:ASViewController<ASDisplayNode> {
         var items:[MenuItem] = []
         if(credentials == nil) {
             items = GuestMenuItems
+            navigationItem.title = "Invitado"
         } else {
             if(credentials?.userType == 1){
+                navigationItem.title = "Asistente"
+                Messaging.messaging().subscribe(toTopic: "Conapeme-Asistentes")
                 if(credentials?.virtual == 1){
                     items = VirtualAssitantMenuItems
                 } else {
                     items = AssitantMenuItems
                 }
             } else {
+                navigationItem.title = "Expositor"
+                Messaging.messaging().subscribe(toTopic: "Conapeme-Expositores")
                 items = ExpositorMenuItems
             }
         }
@@ -79,8 +85,11 @@ class HomeViewController:ASViewController<ASDisplayNode> {
     }
     
     func signout(){
+        
         do {
             try   Disk.remove("credentials.json", from: .documents)
+            Messaging.messaging().unsubscribe(fromTopic: "Conapeme-Expositores")
+            Messaging.messaging().unsubscribe(fromTopic: "Conapeme-Asistentes")
             resetContainer()
         } catch  {}
     }

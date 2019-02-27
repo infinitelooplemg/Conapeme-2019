@@ -30,7 +30,7 @@ final class CPMNetworkLayer {
     
     
     
-    func fastSignin(asisstantId:String,completion: @escaping (_ response:FastSigninResponse) -> ()) {
+    func fastSignin(asisstantId:String,completion: @escaping (_ response:FastSigninResponse?,_ error:Error?) -> ()) {
         components.path = "/assistant/signin"
         
         guard let url = components.url else { fatalError("Could not create URL from components") }
@@ -51,16 +51,18 @@ final class CPMNetworkLayer {
         let session = URLSession(configuration: config)
         let task = session.dataTask(with: request) { (responseData, response, responseError) in
             guard let data = responseData else {
-                
+                DispatchQueue.main.async {
+                    completion(nil,responseError)
+                    
+                }
                 return
             }
             
-           
+            
             do {
                 let response = try JSONDecoder().decode(FastSigninResponse.self, from: data)
-                let ds = String(data: data, encoding: .utf8)
                 DispatchQueue.main.async {
-                    completion(response)
+                    completion(response,nil)
                 }
                 
             } catch let jsonErr {
@@ -71,7 +73,7 @@ final class CPMNetworkLayer {
         task.resume()
     }
     
-    func expositorSignin(expositorId:String,completion: @escaping (_ response:ExpositorSigninResponse) -> ()) {
+    func expositorSignin(expositorId:String,completion: @escaping (_ response:ExpositorSigninResponse?,_ error:Error?) -> ()) {
         components.path = "/expositors/signin"
         
         guard let url = components.url else { fatalError("Could not create URL from components") }
@@ -92,14 +94,17 @@ final class CPMNetworkLayer {
         let session = URLSession(configuration: config)
         let task = session.dataTask(with: request) { (responseData, response, responseError) in
             guard let data = responseData else {
-                
+                DispatchQueue.main.async {
+                    completion(nil,responseError)
+                    
+                }
                 return
             }
             
             do {
                 let response = try JSONDecoder().decode(ExpositorSigninResponse.self, from: data)
                 DispatchQueue.main.async {
-                    completion(response)
+                    completion(response,nil)
                 }
                 
             } catch let jsonErr {

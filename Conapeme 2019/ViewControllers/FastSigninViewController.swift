@@ -31,10 +31,7 @@ class FastSigninViewController: UIViewController {
     
     
     func getDeviceCamera(){
-        
-        
         let defaultDevice = AVCaptureDevice.default(for: AVMediaType.video)
-        
         do {
             let input = try AVCaptureDeviceInput(device: defaultDevice!)
             captureSession.addInput(input)
@@ -42,7 +39,6 @@ class FastSigninViewController: UIViewController {
         catch {
             print ("ERROR")
         }
-        
         let captureMetadataOutput = AVCaptureMetadataOutput()
         captureSession.addOutput(captureMetadataOutput)
         captureMetadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
@@ -100,9 +96,6 @@ extension FastSigninViewController:AVCaptureMetadataOutputObjectsDelegate{
         }
         
         qrCodeString = object.stringValue
-       
-//        dismisViewController()
-        
         dismiss(animated: true) {
             self.delegate?.userDidScannQRCode(assistantId: self.qrCodeString!)
         }

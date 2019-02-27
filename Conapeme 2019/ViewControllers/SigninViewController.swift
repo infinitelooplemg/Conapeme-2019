@@ -217,12 +217,20 @@ class SigninViewController:UIViewController {
         
         let index = typeUserSegment.selectedSegmentIndex
         if(index == 0) {
-            nl.fastSignin(asisstantId: id) { response in
-                self.handleAssistantResponse(response: response)
+            nl.fastSignin(asisstantId: id) { (response,err)  in
+                if(err != nil){
+                    self.showError(message: "Verifique su conexión a internet y vuelva a intentarlo")
+                    return
+                }
+                self.handleAssistantResponse(response: response!)
             }
         } else {
-            nl.expositorSignin(expositorId: id) { response in
-                self.handleExpositorResponse(response: response)
+            nl.expositorSignin(expositorId: id) { (response,err)  in
+                if(err != nil){
+                    self.showError(message: "Verifique su conexión a internet y vuelva a intentarlo")
+                    return
+                }
+                self.handleExpositorResponse(response: response!)
             }
         }
         
@@ -283,8 +291,12 @@ class SigninViewController:UIViewController {
 
 extension SigninViewController:FastSigninDelegate{
     func userDidScannQRCode(assistantId: String) {
-        nl.fastSignin(asisstantId: assistantId) { response in
-            self.handleAssistantResponse(response: response)
+        nl.fastSignin(asisstantId: assistantId) { (response,err)  in
+            if(err != nil){
+                self.showError(message: "Verifique su conexión a internet y vuelva a intentarlo")
+                return
+            }
+            self.handleAssistantResponse(response: response!)
         }
     }
     
