@@ -8,43 +8,35 @@
 
 import Foundation
 import UIKit
-import iOSPlayerSDK
 
-class LiveViewController: UIViewController,USPlayerDelegate {
+class LiveViewController: UIViewController {
     
     
-    
-    var usstreamPlayter: USUstreamPlayer?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        usstreamPlayter = USUstreamPlayer()
-        usstreamPlayter?.delegate = self
-        usstreamPlayter?.view.frame = self.view.bounds
-        view.addSubview(usstreamPlayter!.view)
-        
-        var mediadescriptor =  USMediaDescriptor.channelDescriptor(withID: "23639470")
-        usstreamPlayter?.playMedia(mediadescriptor)
-        
-
-        
-        
-        //        USMediaDescriptor *mediaDescriptor = [USMediaDescriptor channelDescriptorWithID:<#place your channel ID here#>];
-        //        [self.ustreamPlayer playMedia:mediaDescriptor];
-        
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        setupNavitagionItems()
-    }
-    
-    
-    func setupNavitagionItems(){
-        navigationItem.title = "En Vivo"
-        let menuButton = UIBarButtonItem(title: "Ok", style: .plain, target: self, action: #selector(dismisVC))
-        navigationItem.setLeftBarButton(menuButton, animated: true)
-    }
-    
-    @objc func dismisVC(){
-        dismiss(animated: true, completion: nil)
-    }
+//
+//    var usstreamPlayter: USUstreamPlayer?
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        usstreamPlayter = USUstreamPlayer()
+//        usstreamPlayter?.delegate = self
+//        usstreamPlayter?.bottomToolbar()
+//        usstreamPlayter?.view.frame = self.view.bounds
+//        view.addSubview(usstreamPlayter!.view)
+//
+//        var mediadescriptor =  USMediaDescriptor.channelDescriptor(withID: "23639470")
+//        usstreamPlayter?.playMedia(mediadescriptor)
+//
+//        setupNavitagionItems()
+//    }
+//
+//
+//    func setupNavitagionItems(){
+//        navigationItem.title = "En Vivo"
+//        let menuButton = UIBarButtonItem(title: "Ok", style: .plain, target: self, action: #selector(dismisVC))
+//        navigationItem.setLeftBarButton(menuButton, animated: true)
+//    }
+//
+//    @objc func dismisVC(){
+//        dismiss(animated: true, completion: nil)
+//    }
 }

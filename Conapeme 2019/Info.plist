@@ -5,7 +5,7 @@
 	<key>FirebaseScreenReportingEnabled</key>
 	<false/>
 	<key>NSCameraUsageDescription</key>
-	<string>Necesitamos acceder a tu camara para escanear tu gafete</string>
+	<string>Necesitamos acceder a tu cámara para escanear tu gafete</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

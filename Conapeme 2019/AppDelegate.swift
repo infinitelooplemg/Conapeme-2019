@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import UserNotifications
 import FirebaseMessaging
-import iOSPlayerSDK
+//import iOSPlayerSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate,MessagingDelegate{
@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
         window?.rootViewController = MasterViewController()
         window?.makeKeyAndVisible()
         
-        USUstreamPlayer.configure(withApiKey: "0J4Nofz3V0KOegRgjYsQJcxlkCYeERgu9EUX1cgP")
+//        USUstreamPlayer.configure(withApiKey: "0J4Nofz3V0KOegRgjYsQJcxlkCYeERgu9EUX1cgP")
         Messaging.messaging().delegate = self
         Messaging.messaging().subscribe(toTopic: "Conapeme-general")
         

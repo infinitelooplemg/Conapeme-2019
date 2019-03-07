@@ -11,6 +11,7 @@ import Foundation
 
 import Foundation
 import UIKit
+import AVFoundation
 import Disk
 
 class SigninViewController:UIViewController {
@@ -188,9 +189,28 @@ class SigninViewController:UIViewController {
     }
     
     @objc func showFastSigninController() {
-        let vc = FastSigninViewController()
-        vc.delegate = self
-        present(vc, animated: true, completion: nil)
+        
+        AVCaptureDevice.requestAccess(for: .video) { success in
+            if success { // if request is granted (success is true)
+                DispatchQueue.main.async {
+                    let vc = FastSigninViewController()
+                    vc.delegate = self
+                    
+                    self.present(UINavigationController(rootViewController: vc), animated: true, completion: nil)
+
+                }
+            } else { // if request is denied (success is false)
+                // Create Alert
+                let alert = UIAlertController(title: "Camera", message: "Necesitamos nos permitas acceder a tu cámara para poder usar el inicio rápido", preferredStyle: .alert)
+                
+                // Add "OK" Button to alert, pressing it will bring you to the settings app
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                    UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                }))
+                // Show the alert with animation
+                self.present(alert, animated: true)
+            }
+        }
     }
     
     @objc func dismissVC(){
@@ -211,7 +231,7 @@ class SigninViewController:UIViewController {
     
     
     @objc func signin(){
-          ERProgressHud.sharedInstance()?.show(withTitle: "Iniciando Sesión")
+        ERProgressHud.sharedInstance()?.show(withTitle: "Iniciando Sesión")
         guard let id = loginField.text else {
             return
         }
@@ -238,7 +258,7 @@ class SigninViewController:UIViewController {
     }
     
     func handleExpositorResponse(response:ExpositorSigninResponse){
-          ERProgressHud.sharedInstance()?.hide()
+        ERProgressHud.sharedInstance()?.hide()
         switch response.code {
         case 200:
             guard let expositor = response.result else {
@@ -254,7 +274,7 @@ class SigninViewController:UIViewController {
     }
     
     func handleAssistantResponse(response:FastSigninResponse){
-            ERProgressHud.sharedInstance()?.hide()
+        ERProgressHud.sharedInstance()?.hide()
         switch response.code {
         case 200:
             guard let assistant = response.result else {
@@ -294,7 +314,7 @@ class SigninViewController:UIViewController {
 
 extension SigninViewController:FastSigninDelegate{
     func userDidScannQRCode(assistantId: String) {
-          ERProgressHud.sharedInstance()?.show(withTitle: "Iniciando Sesión")
+        ERProgressHud.sharedInstance()?.show(withTitle: "Iniciando Sesión")
         nl.fastSignin(asisstantId: assistantId) { (response,err)  in
             if(err != nil){
                 self.showError(message: "Verifique su conexión a internet y vuelva a intentarlo")

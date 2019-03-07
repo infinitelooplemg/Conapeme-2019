@@ -50,21 +50,17 @@
 		A037E9812227251B00A2B45A /* montaje.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A037E9802227251B00A2B45A /* montaje.pdf */; };
 		A037E9832227252500A2B45A /* tand.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A037E9822227252400A2B45A /* tand.pdf */; };
 		A037E9852227255500A2B45A /* StandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A037E9842227255500A2B45A /* StandViewController.swift */; };
-		A037E9892227346F00A2B45A /* iOSPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A037E9882227346F00A2B45A /* iOSPlayerSDK.framework */; };
-		A037E98A2227346F00A2B45A /* iOSPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A037E9882227346F00A2B45A /* iOSPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A037E98D2227350D00A2B45A /* strip-dynamic-frameworks.sh in Resources */ = {isa = PBXBuildFile; fileRef = A037E98C2227350D00A2B45A /* strip-dynamic-frameworks.sh */; };
 		A037E9902227389800A2B45A /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A037E98F2227389800A2B45A /* StreamViewController.swift */; };
 		E071A4E1C0998110DC600554 /* Pods_Conapeme_2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82BDBD73663664E46F21D96 /* Pods_Conapeme_2019.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A037E98B2227346F00A2B45A /* Embed Frameworks */ = {
+		A0BF9A0322277D58008A5444 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A037E98A2227346F00A2B45A /* iOSPlayerSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,8 +117,6 @@
 		A037E9822227252400A2B45A /* tand.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = tand.pdf; path = ../../../../Documents/tand.pdf; sourceTree = "<group>"; };
 		A037E9842227255500A2B45A /* StandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandViewController.swift; sourceTree = "<group>"; };
 		A037E9862227346200A2B45A /* iOSPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iOSPlayerSDK.framework; path = "../../Downloads/ibm-player-sdk-ios-v1/Framework/iOSPlayerSDK.framework"; sourceTree = "<group>"; };
-		A037E9882227346F00A2B45A /* iOSPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOSPlayerSDK.framework; sourceTree = "<group>"; };
-		A037E98C2227350D00A2B45A /* strip-dynamic-frameworks.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "strip-dynamic-frameworks.sh"; sourceTree = "<group>"; };
 		A037E98F2227389800A2B45A /* StreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
 		A054899922266FC90094C6C1 /* Conapeme 2019.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Conapeme 2019.entitlements"; sourceTree = "<group>"; };
 		E82BDBD73663664E46F21D96 /* Pods_Conapeme_2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conapeme_2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,7 +128,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A037E9892227346F00A2B45A /* iOSPlayerSDK.framework in Frameworks */,
 				E071A4E1C0998110DC600554 /* Pods_Conapeme_2019.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,8 +184,6 @@
 		63CD3BE0221DE9EB008654DE = {
 			isa = PBXGroup;
 			children = (
-				A037E98C2227350D00A2B45A /* strip-dynamic-frameworks.sh */,
-				A037E9882227346F00A2B45A /* iOSPlayerSDK.framework */,
 				63CD3BEB221DE9EB008654DE /* Conapeme 2019 */,
 				63CD3BEA221DE9EB008654DE /* Products */,
 				EC7157FFC7D672A2206B2B6A /* Pods */,
@@ -327,8 +318,8 @@
 				63CD3BE6221DE9EB008654DE /* Frameworks */,
 				63CD3BE7221DE9EB008654DE /* Resources */,
 				413B7234AC4A37EAA2BE6D9E /* [CP] Embed Pods Frameworks */,
-				A037E98B2227346F00A2B45A /* Embed Frameworks */,
 				A037E98E222735CA00A2B45A /* ShellScript */,
+				A0BF9A0322277D58008A5444 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -386,7 +377,6 @@
 				63373E80221E606A00B9981B /* 2.pdf in Resources */,
 				63CD3BF7221DE9EC008654DE /* LaunchScreen.storyboard in Resources */,
 				A037E9812227251B00A2B45A /* montaje.pdf in Resources */,
-				A037E98D2227350D00A2B45A /* strip-dynamic-frameworks.sh in Resources */,
 				63373E86221E60BB00B9981B /* hoteles.json in Resources */,
 				63373E81221E606A00B9981B /* 1.pdf in Resources */,
 				63CD3BF4221DE9EC008654DE /* Assets.xcassets in Resources */,
@@ -449,7 +439,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/strip-dynamic-frameworks.sh\"\n";
+			shellScript = "
+
+";
 		};
 		BF6006DDB22F4EA3753E1D5F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
