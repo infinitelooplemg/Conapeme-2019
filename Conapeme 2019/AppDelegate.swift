@@ -21,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = MasterViewController()
+//        window?.rootViewController = MasterViewController()
+       window?.rootViewController = UINavigationController(rootViewController: WorkshopsInteractiveViewController())
         window?.makeKeyAndVisible()
         
 //        USUstreamPlayer.configure(withApiKey: "0J4Nofz3V0KOegRgjYsQJcxlkCYeERgu9EUX1cgP")
@@ -43,6 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
         }
         
         application.registerForRemoteNotifications()
+        
+            UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).backgroundColor = .white
         
         
         // Override point for customization after application launch.

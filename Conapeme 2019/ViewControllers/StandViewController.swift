@@ -27,12 +27,9 @@ class StandViewController: UIViewController {
         setupNavitagionItems()
         extendedLayoutIncludesOpaqueBars = false
         navigationController?.navigationBar.isTranslucent = false
-        //
-        //        let url: URL! = URL(string: "http://developer.apple.com/iphone/library/documentation/UIKit/Reference/UIWebView_Class/UIWebView_Class.pdf")
-        //        webView.load(URLRequest(url: url))
         navigationItem.title = "Manual del Expositor"
         
-        if let pdf = Bundle.main.url(forResource: "tand", withExtension: "pdf", subdirectory: nil, localization: nil)  {
+        if let pdf = Bundle.main.url(forResource: "2", withExtension: "pdf", subdirectory: nil, localization: nil)  {
             let req = NSURLRequest(url: pdf)
             webView.load(req as URLRequest)
         }

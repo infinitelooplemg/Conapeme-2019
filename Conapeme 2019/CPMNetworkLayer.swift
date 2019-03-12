@@ -53,22 +53,17 @@ final class CPMNetworkLayer {
             guard let data = responseData else {
                 DispatchQueue.main.async {
                     completion(nil,responseError)
-                    
                 }
                 return
             }
-            
-            
             do {
                 let response = try JSONDecoder().decode(FastSigninResponse.self, from: data)
                 DispatchQueue.main.async {
                     completion(response,nil)
                 }
-                
             } catch let jsonErr {
                 print(jsonErr)
             }
-            
         }
         task.resume()
     }
@@ -103,6 +98,118 @@ final class CPMNetworkLayer {
             
             do {
                 let response = try JSONDecoder().decode(ExpositorSigninResponse.self, from: data)
+                DispatchQueue.main.async {
+                    completion(response,nil)
+                }
+                
+            } catch let jsonErr {
+                print(jsonErr)
+            }
+            
+        }
+        task.resume()
+    }
+    
+    func fetchWorkshops(completion: @escaping (_ response:[Workshop]?,_ error:Error?) -> ()) {
+        components.path = "/workshops"
+        
+        guard let url = components.url else { fatalError("Could not create URL from components") }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let task = session.dataTask(with: request) { (responseData, response, responseError) in
+            guard let data = responseData else {
+                DispatchQueue.main.async {
+                    completion(nil,responseError)
+                }
+                return
+            }
+            
+            do {
+                let response = try JSONDecoder().decode([Workshop].self, from: data)
+                DispatchQueue.main.async {
+                    completion(response,nil)
+                }
+                
+            } catch let jsonErr {
+                print(jsonErr)
+            }
+            
+        }
+        task.resume()
+    }
+    
+    func addAssistanceToWorkshop(assistantId:Int,workshopId:Int,logisticsId:String,completion: @escaping (_ response:GenericSuccesResponse<SQLResult>?,_ error:Error?) -> ()) {
+        components.path = "/assistances"
+        
+        guard let url = components.url else { fatalError("Could not create URL from components") }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        var headers = request.allHTTPHeaderFields ?? [:]
+        headers["Content-Type"] = "application/json"
+        request.allHTTPHeaderFields = headers
+        
+        let parameter = AddAssitanceToWorkshopRequestParameters(assistantId:assistantId,workshopId:workshopId,logisticsId:logisticsId)
+        
+        request.httpBody = encodeToJson(parameters: parameter)
+        
+        
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let task = session.dataTask(with: request) { (responseData, response, responseError) in
+            guard let data = responseData else {
+                DispatchQueue.main.async {
+                    completion(nil,responseError)
+                }
+                return
+            }
+            
+            do {
+                let response = try JSONDecoder().decode(GenericSuccesResponse<SQLResult>.self, from: data)
+                DispatchQueue.main.async {
+                    completion(response,nil)
+                }
+                
+            } catch let jsonErr {
+                print(jsonErr)
+            }
+            
+        }
+        task.resume()
+    }
+    
+    func fetchAssistantsFor(workshopId:Int,completion: @escaping (_ response:GenericSuccesResponse<[WorkshopAssistant]>?,_ error:Error?) -> ()) {
+        components.path = "/workshops/assistants"
+        
+        guard let url = components.url else { fatalError("Could not create URL from components") }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        var headers = request.allHTTPHeaderFields ?? [:]
+        headers["Content-Type"] = "application/json"
+        request.allHTTPHeaderFields = headers
+        
+        let parameter = WorkshopAssistantsRequestParameter(workshopId:workshopId)
+        
+        request.httpBody = encodeToJson(parameters: parameter)
+        
+        
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let task = session.dataTask(with: request) { (responseData, response, responseError) in
+            guard let data = responseData else {
+                DispatchQueue.main.async {
+                    completion(nil,responseError)
+                }
+                return
+            }
+            
+            do {
+                let response = try JSONDecoder().decode(GenericSuccesResponse<[WorkshopAssistant]>.self, from: data)
                 DispatchQueue.main.async {
                     completion(response,nil)
                 }

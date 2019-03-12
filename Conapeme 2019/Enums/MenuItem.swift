@@ -22,6 +22,7 @@ enum MenuItem:Int  {
     case hoteles = 9
     case servicios  = 10
     case live = 11
+    case registration = 12
     
     
     var description: (String) {
@@ -48,6 +49,8 @@ enum MenuItem:Int  {
             return "En vivo"
         case .servicios:
             return "Servicios Adicionales"
+        case .registration:
+            return "Registro de Asistencia"
         }
         
     }
@@ -76,6 +79,8 @@ enum MenuItem:Int  {
             return UIImage(named: "servicios")
         case .live:
             return UIImage(named: "live")
+        case .registration:
+            return UIImage(named: "calendar")
         }
         
     }

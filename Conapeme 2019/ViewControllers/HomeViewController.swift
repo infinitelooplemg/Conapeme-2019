@@ -38,7 +38,7 @@ class HomeViewController:ASViewController<ASDisplayNode> {
         initializeNavigationBar()
         extendedLayoutIncludesOpaqueBars = false
         navigationController?.navigationBar.isTranslucent = false
-      
+        
     }
     
     
@@ -140,12 +140,15 @@ class HomeViewController:ASViewController<ASDisplayNode> {
             presentVC(vc: MontajeViewController())
         case .stands:
             presentVC(vc: StandViewController())
-                    case .live:
-                    presentVC(vc: LiveViewController())
+        case .live:
+            presentVC(vc: LiveViewController())
+        case .registration:
+             presentVC(vc: WorkshopsInteractiveViewController())
         default:
             print("default")
         }
     }
+
     
     
     func presentVC(vc:UIViewController){
